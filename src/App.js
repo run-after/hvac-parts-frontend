@@ -1,6 +1,7 @@
 import './styles/App.css';
 import Equipment from './components/Equipment';
 import EquipmentPiece from './components/EquipmentPiece';
+import EquipmentForm from './components/EquipmentForm';
 import Part from './components/Part';
 import Parts from './components/Parts';
 import Home from './components/Home';
@@ -13,6 +14,9 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
+          <Route path='/equipment/create'>
+            <EquipmentForm />
+          </Route>
           <Route path='/equipment/:equipmentID'>
             <EquipmentPiece />
           </Route>
