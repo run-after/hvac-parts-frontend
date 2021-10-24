@@ -17,7 +17,7 @@ function EquipmentForm() {
       body: JSON.stringify({
         'name': e.target.name.value,
         'manufacturer': e.target.manufacturer.value,
-        'model': e.target.manufacturer.value,
+        'model': e.target.model.value,
         'serial': e.target.serial.value,
         'type': e.target.type.value
       })
